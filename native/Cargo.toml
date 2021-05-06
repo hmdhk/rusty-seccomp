@@ -1,0 +1,21 @@
+[package]
+name = "rusty-seccomp"
+version = "0.1.0"
+authors = ["Hamid <h.jahtalab@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "rusty_seccomp"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.8.1"
+
+[dependencies]
+neon = "0.8.1"
+libseccomp = "0.1.2"
+serde_json = "1.0"
+serde = { version = "1.0.125", features = ["derive"] }

@@ -1,0 +1,17 @@
+{
+  "name": "rusty-seccomp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "author": "Hamid <h.jahtalab@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.8.1"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}

@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  seccomp:
+    build:
+      context: ./
+    working_dir: /home/rusty-seccomp/
+    command: bash
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/home/rusty-seccomp/
