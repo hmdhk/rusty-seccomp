@@ -2,9 +2,9 @@ const seccomp = require('../lib')
 const { baseRules, httpServer } = require('./seccomp-rules')
 
 const allowed = {
-    "seccomp": {
-        "defaultAction": "SCMP_ACT_ERRNO",
-        "syscalls": [
+    seccomp: {
+        defaultAction: "SCMP_ACT_ERRNO",
+        syscalls: [
             baseRules,
             httpServer
         ]
