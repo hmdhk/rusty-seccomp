@@ -67,5 +67,5 @@ for (const key in seccomp) {
   }
 }
 
-console.log(JSON.stringify(jsonFormat, undefined, 2))
+console.log('json:', JSON.stringify(jsonFormat, undefined, 2))
 
